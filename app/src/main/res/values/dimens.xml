@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="marginApp">16dp</dimen>
+    <dimen name="marginImage">120dp</dimen>
+    <dimen name="tv_size_title">16sp</dimen>
+    <dimen name="margin_between_edittext">20dp</dimen>
+    <dimen name="edit_size_hint">16sp</dimen>
+    <dimen name="edit_ems">10</dimen>
+    <dimen name="margin_gol">70dp</dimen>
+    <dimen name="edit_gol_ems">8</dimen>
+    <dimen name="zero_width">0dp</dimen>
+    <dimen name="weight_linear">0.5</dimen>
+    <dimen name="margin_select_team">20dp</dimen>
+    <dimen name="weight_edit_team">90</dimen>
+    <dimen name="weightButton">10</dimen>
+    <dimen name="weightEditGoal">45</dimen>
+    <dimen name="weightTextLine">15</dimen>
+    <dimen name="weightButtonTeam">10</dimen>
+    <dimen name="marginBetweenTeams">5dp</dimen>
+    <dimen name="marginBetweenLiners">5dp</dimen>
+    <dimen name="heightButton">30dp</dimen>
+    <dimen name="marginBtnAcceptCancel">10dp</dimen>
+    <dimen name="weightBtnAcceptCancel">40</dimen>
+    <dimen name="marginEditSelectCountry">50dp</dimen>
+    <dimen name="size_teams">13sp</dimen>
+    <dimen name="padding_teams">0dp</dimen>
+    <dimen name="padding_button_teams">0dp</dimen>
+
+</resources>

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/marginApp"
+    tools:context=".ActivityRegisterResult">
+
+    <TextView
+        android:id="@+id/tv_Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tvEnter"
+        android:textColor="@color/black"
+        android:textSize="@dimen/tv_size_title"
+        android:textStyle="bold"
+        />
+
+    <LinearLayout
+        android:id="@+id/ll_DataTimePhase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="1"
+        >
+    <EditText
+        android:id="@+id/edit_DateTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:layout_marginTop="@dimen/margin_between_edittext"
+        android:hint="@string/hint_edit_DataTime"
+        android:inputType="datetime"
+        />
+    <EditText
+        android:id="@+id/edit_Phase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:layout_below="@+id/edit_DateTime"
+        android:layout_marginTop="@dimen/margin_between_edittext"
+        android:hint="@string/hint_edit_Phase"
+        android:inputType="textMultiLine"
+        />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_SelectTeams"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/ll_DataTimePhase"
+        android:layout_marginTop="@dimen/marginBetweenLiners"
+        >
+        <LinearLayout
+            android:id="@+id/ll_SelectTeam1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edit_Phase"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/edit_SelectTeam1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:enabled="false"
+                android:hint="@string/hint_edit_Team1"
+                android:textSize="@dimen/edit_size_hint" />
+
+            <Button
+                android:id="@+id/btn_SelectTeam1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/txt_btn_SelectTeam"
+                android:backgroundTint="@color/colors_btn"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_SelectTeam2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            >
+
+            <EditText
+                android:id="@+id/edit_SelectTeam2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:enabled="false"
+                android:hint="@string/hint_edit_Team2"
+                android:textSize="@dimen/edit_size_hint" />
+
+            <Button
+                android:id="@+id/btn_SelectTeam2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/txt_btn_SelectTeam"
+                android:backgroundTint="@color/colors_btn"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_GoalTeam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_ContainerSelectTeams"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:layout_marginTop="@dimen/marginBetweenLiners"
+            >
+
+
+            <EditText
+                android:id="@+id/edit_GolTeam1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.80"
+                android:hint="@string/hint_GolTeam1"
+                android:textSize="@dimen/edit_size_hint"
+                android:inputType="number"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_line"
+                android:layout_weight="1.40"
+                android:textAlignment="center"
+
+                />
+
+            <EditText
+                android:id="@+id/edit_GolTeam2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.80"
+                android:hint="@string/hint_GolTeam2"
+                android:textSize="@dimen/edit_size_hint"
+                android:inputType="number"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        >
+
+        <Button
+            android:id="@+id/btn_SaveResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_btn_SaveData"
+            android:backgroundTint="@color/colors_btn"
+            />
+
+        <Button
+            android:id="@+id/btn_ClearData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_btn_ClearData"
+            android:backgroundTint="@color/colors_btn"
+            />
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>
