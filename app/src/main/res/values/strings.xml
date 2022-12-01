@@ -51,8 +51,9 @@
     <string name="txt_btn_Cancel">Cancelar</string>
     <string name="hint_edit_CountrySelected">Introduce el pais Seleccionado</string>
     <string name="txt_tv_ConsultResult">Consultar resultado por país</string>
-    <string name="hint_edit_EnterCountry">Introduce el país</string>
+    <string name="hint_edit_enter">Introduce el país</string>
     <string name="select_country">Debes selecionar un equipo</string>
     <string name="requestData">Todo los datos son obligatorios</string>
     <string name="save_messege">!Resultado guardado!</string>
+    <string name="tvConsultResult">Consultar resultados por pais</string>
 </resources>

@@ -38,7 +38,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="0.5"
-        android:layout_below="@+id/edit_DateTime"
         android:layout_marginTop="@dimen/margin_between_edittext"
         android:hint="@string/hint_edit_Phase"
         android:inputType="textMultiLine"
@@ -58,7 +57,6 @@
             android:id="@+id/ll_SelectTeam1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/edit_Phase"
             android:orientation="horizontal" >
 
             <EditText
