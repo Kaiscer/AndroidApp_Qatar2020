@@ -68,7 +68,9 @@ public class ActivityRegisterResult extends AppCompatActivity implements View.On
 
     @Override
     public void onClick(View view) {
-        if (view == btnSelectTeam1 || view == btnSelectTeam2 ){
+        if (view == btnSelectTeam1){
+            selectTeams();
+        }else if (view == btnSelectTeam2){
             selectTeams();
         }else if(view == btnSaveData){
             saveData();
