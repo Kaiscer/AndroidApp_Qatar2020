@@ -56,5 +56,5 @@
     <string name="requestData">Todo los datos son obligatorios</string>
     <string name="save_messege">!Resultado guardado!</string>
     <string name="tvConsultResult">Consultar resultados por pais</string>
-    <string name="txt_btn_Consult">Limpiar Datos</string>
+    <string name="txt_btn_Consult">Seleccionar</string>
 </resources>

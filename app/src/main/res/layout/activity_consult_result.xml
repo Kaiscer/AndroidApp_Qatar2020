@@ -16,32 +16,34 @@
         android:textSize="@dimen/tv_size_title"
         android:textStyle="bold"
         />
-
     <LinearLayout
-        android:id="@+id/ll_EnterCountry"
+        android:id="@+id/ll_SelectTeam1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:orientation="horizontal"
         android:layout_marginTop="@dimen/margin_between_tv_and_et"
-        android:orientation="horizontal">
+        >
 
         <EditText
             android:id="@+id/edit_SelectTeam1"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_weight="3"
-            android:hint="@string/hint_edit_enter"
-            android:inputType="text"
+            android:enabled="false"
+            android:hint="@string/hint_edit_Team1"
             android:textSize="@dimen/edit_size_hint" />
 
         <Button
-            android:id="@+id/btn_ConsultResult"
-            android:layout_width="92dp"
-            android:layout_height="60dp"
+            android:id="@+id/btn_SelectTeam1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:text="@string/txt_btn_SelectTeam"
             android:backgroundTint="@color/colors_btn"
-            android:text="@string/txt_btn_Consult" />
+            />
 
     </LinearLayout>
+
 
     <LinearLayout
         android:id="@+id/ll_ContainerFrame"

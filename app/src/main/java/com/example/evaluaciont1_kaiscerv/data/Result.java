@@ -25,4 +25,16 @@ public class Result {
     public String getTeam2() {
         return team2;
     }
+
+    @Override
+    public String toString() {
+        return "Result{" +
+                "phase='" + phase + '\'' +
+                ", dateTime='" + dateTime + '\'' +
+                ", team1='" + team1 + '\'' +
+                ", scoreTeam1=" + scoreTeam1 +
+                ", team2='" + team2 + '\'' +
+                ", scoreTeam2=" + scoreTeam2 +
+                '}';
+    }
 }

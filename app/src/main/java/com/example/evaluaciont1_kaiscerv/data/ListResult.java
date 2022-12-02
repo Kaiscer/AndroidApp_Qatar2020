@@ -4,8 +4,6 @@ import java.util.ArrayList;
 
 public class ListResult {
 
-
-
     private ArrayList<Result> listResult;
 
     public ListResult() {

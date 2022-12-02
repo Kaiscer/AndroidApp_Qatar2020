@@ -15,6 +15,8 @@ public class SelectTeamsActivity extends AppCompatActivity implements View.OnCli
     public static final String CLAVE_TEAM1 = "TEAM1";
     public static final int RESULT_OK_TEAM2 = 102;
     public static final String CLAVE_TEAM2 = "TEAM2";
+
+
     Button btnGermany,btnArabiaSaudi,btn_Argentina;
     Button btnAustralia,btnBelgium,btnBrazil;
     Button btnCameroon, btnCanada, btnSouthKorea;
@@ -114,12 +116,13 @@ public class SelectTeamsActivity extends AppCompatActivity implements View.OnCli
            if(etCountrySelect.getText().toString().isEmpty()){
                Toast.makeText(this, R.string.select_country, Toast.LENGTH_LONG).show();
            }else{
-               if (ActivityRegisterResult.etSteam1.getText().toString().isEmpty()){
+               String key = getIntent().getStringExtra("team");
+               if (key.equals("team1")){
                     Intent intent = new Intent();
                     intent.putExtra(CLAVE_TEAM1, etCountrySelect.getText().toString());
                     setResult(RESULT_OK_TEAM1, intent);
                     finish();
-               }else{
+               }else if (key.equals("team2")){
                    Intent intent = new Intent();
                    intent.putExtra(CLAVE_TEAM2, etCountrySelect.getText().toString());
                    setResult(RESULT_OK_TEAM2, intent);

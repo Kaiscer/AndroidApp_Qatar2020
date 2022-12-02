@@ -13,7 +13,11 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.evaluaciont1_kaiscerv.data.ListResult;
+import com.example.evaluaciont1_kaiscerv.data.Result;
+
 public class ActivityRegisterResult extends AppCompatActivity implements View.OnClickListener {
+
 
     EditText etDateTime;
     EditText etPhase;
@@ -22,7 +26,11 @@ public class ActivityRegisterResult extends AppCompatActivity implements View.On
     EditText etGolTeam1;
     EditText etGolTeam2;
     Button btnSelectTeam1,btnSelectTeam2, btnSaveData, btnClearData;
+    ListResult listResult;
 
+    public ActivityRegisterResult() {
+        listResult = new ListResult();
+    }
 
     ActivityResultLauncher<Intent> startActivityForResult = registerForActivityResult(
             new ActivityResultContracts.StartActivityForResult(),
@@ -90,6 +98,11 @@ public class ActivityRegisterResult extends AppCompatActivity implements View.On
             Toast.makeText(this,R.string.requestData, Toast.LENGTH_LONG).show();
         }else {
             Toast.makeText(this, R.string.save_messege, Toast.LENGTH_LONG).show();
+            listResult.addResult(new Result(phase, dataTime, team1, Integer.parseInt(String.valueOf(golTeam1)),
+                    team2, Integer.parseInt(String.valueOf(golTeam2))));
+            for (Result result : listResult.getListResult()) {
+                System.out.println(result.toString());
+            }
             clearData();
         }
     }
@@ -103,12 +116,14 @@ public class ActivityRegisterResult extends AppCompatActivity implements View.On
         etGolTeam2.setText("");
     }
 
-    private void selectTeams() {
+    public void selectTeams() {
         if (btnSelectTeam1.isPressed()){
             Intent intent = new Intent(this, SelectTeamsActivity.class);
+            intent.putExtra("team", "team1");
             startActivityForResult.launch(intent);
     }else if (btnSelectTeam2.isPressed()){
             Intent intent = new Intent(this, SelectTeamsActivity.class);
+            intent.putExtra("team", "team2");
             startActivityForResult.launch(intent);
         }
     }

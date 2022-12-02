@@ -31,7 +31,9 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_marginTop="@dimen/marginBetweenLiners"
-        android:gravity="center">
+        android:gravity="center"
+        android:weightSum="3"
+        >
 
         <Button
             android:id="@+id/btn_Germany"
@@ -46,6 +48,7 @@
             android:textAllCaps="false"
             android:textColor="@color/black"
             android:textSize="@dimen/size_teams"
+            android:layout_weight="1"
             />
 
         <Button
@@ -61,13 +64,14 @@
             android:textColor="@color/black"
             android:background="@android:color/transparent"
             android:layout_margin="@dimen/marginBetweenTeams"
-
+            android:layout_weight="1"
             />
 
         <Button
             android:id="@+id/btn_Argentina"
             android:layout_width="@dimen/width_btn"
             android:layout_height="@dimen/heightButton"
+            android:layout_weight="1"
             android:text="@string/txt_btn_Argentina"
             android:textAllCaps="false"
             android:padding="@dimen/padding_teams"
