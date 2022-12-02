@@ -32,7 +32,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View view) {
         if (view == btnRegister){
             registerResult();
+        }else if (view == btnConsult){
+            consultResult();
         }
+    }
+
+    private void consultResult() {
+        Intent intent = new Intent(this, ConsultResultActivity.class);
+        startActivity(intent);
     }
 
     private void registerResult() {

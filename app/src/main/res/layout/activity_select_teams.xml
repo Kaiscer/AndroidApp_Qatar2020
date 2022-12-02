@@ -35,10 +35,9 @@
 
         <Button
             android:id="@+id/btn_Germany"
-            android:layout_width="wrap_content"
+            android:layout_width="@dimen/width_btn"
             android:layout_height="@dimen/heightButton"
             android:layout_margin="@dimen/marginBetweenTeams"
-            android:layout_weight="@dimen/weightButtonTeam"
             android:background="@android:color/transparent"
             android:padding="@dimen/padding_teams"
             android:paddingBottom="@dimen/padding_button_teams"
@@ -47,14 +46,12 @@
             android:textAllCaps="false"
             android:textColor="@color/black"
             android:textSize="@dimen/size_teams"
-
-            tools:ignore="TouchTargetSizeCheck" />
+            />
 
         <Button
             android:id="@+id/btn_ArabiaSaudi"
-            android:layout_width="wrap_content"
+            android:layout_width="@dimen/width_btn"
             android:layout_height="@dimen/heightButton"
-            android:layout_weight="@dimen/weightButtonTeam"
             android:text="@string/txt_btn_ArabiaSaudi"
             android:textAllCaps="false"
             android:padding="@dimen/padding_teams"
@@ -69,9 +66,8 @@
 
         <Button
             android:id="@+id/btn_Argentina"
-            android:layout_width="wrap_content"
+            android:layout_width="@dimen/width_btn"
             android:layout_height="@dimen/heightButton"
-            android:layout_weight="@dimen/weightButtonTeam"
             android:text="@string/txt_btn_Argentina"
             android:textAllCaps="false"
             android:padding="@dimen/padding_teams"
@@ -97,9 +93,8 @@
 
             <Button
                 android:id="@+id/btn_Australia"
-                android:layout_width="wrap_content"
+                android:layout_width="@dimen/width_btn"
                 android:layout_height="@dimen/heightButton"
-                android:layout_weight="@dimen/weightButtonTeam"
                 android:text="@string/txt_btn_Australia"
                 android:textAllCaps="false"
                 android:padding="@dimen/padding_teams"
@@ -114,9 +109,8 @@
 
             <Button
                 android:id="@+id/btn_Belgium"
-                android:layout_width="wrap_content"
+                android:layout_width="@dimen/width_btn"
                 android:layout_height="@dimen/heightButton"
-                android:layout_weight="@dimen/weightButtonTeam"
                 android:text="@string/txt_btn_Belgium"
                 android:textAllCaps="false"
                 android:padding="@dimen/padding_teams"
@@ -131,10 +125,8 @@
 
             <Button
                 android:id="@+id/btn_Brazil"
-                android:layout_width="wrap_content"
+                android:layout_width="@dimen/width_btn"
                 android:layout_height="@dimen/heightButton"
-                android:layout_margin="@dimen/marginBetweenTeams"
-                android:layout_weight="@dimen/weightButtonTeam"
                 android:background="@android:color/transparent"
                 android:padding="@dimen/padding_teams"
                 android:paddingBottom="@dimen/padding_button_teams"
@@ -143,7 +135,9 @@
                 android:textAllCaps="false"
                 android:textColor="@color/black"
                 android:textSize="@dimen/size_teams"
-                tools:ignore="TouchTargetSizeCheck" />
+                android:layout_margin="@dimen/marginBetweenTeams"
+
+                />
         </LinearLayout>
 
         <LinearLayout
@@ -156,9 +150,8 @@
             >
             <Button
                 android:id="@+id/btn_Cameroon"
-                android:layout_width="wrap_content"
+                android:layout_width="@dimen/width_btn"
                 android:layout_height="@dimen/heightButton"
-                android:layout_weight="@dimen/weightButtonTeam"
                 android:text="@string/txt_btn_Cameroon"
                 android:textAllCaps="false"
                 android:padding="@dimen/padding_teams"
@@ -171,9 +164,8 @@
                 />
             <Button
                 android:id="@+id/btn_Canada"
-                android:layout_width="wrap_content"
+                android:layout_width="@dimen/width_btn"
                 android:layout_height="@dimen/heightButton"
-                android:layout_weight="@dimen/weightButtonTeam"
                 android:text="@string/txt_btn_Canada"
                 android:textAllCaps="false"
                 android:padding="@dimen/padding_teams"
@@ -186,9 +178,8 @@
                 />
             <Button
                 android:id="@+id/btn_SouthKorea"
-                android:layout_width="wrap_content"
+                android:layout_width="@dimen/width_btn"
                 android:layout_height="@dimen/heightButton"
-                android:layout_weight="@dimen/weightButtonTeam"
                 android:text="@string/txt_btn_SouthKorea"
                 android:textAllCaps="false"
                 android:padding="@dimen/padding_teams"
@@ -211,9 +202,8 @@
             >
             <Button
                 android:id="@+id/btn_CostRica"
-                android:layout_width="wrap_content"
+                android:layout_width="@dimen/width_btn"
                 android:layout_height="@dimen/heightButton"
-                android:layout_weight="@dimen/weightButtonTeam"
                 android:text="@string/txt_btn_CostRica"
                 android:textAllCaps="false"
                 android:padding="@dimen/padding_teams"
@@ -226,9 +216,8 @@
                 />
             <Button
                 android:id="@+id/btn_Croatia"
-                android:layout_width="wrap_content"
+                android:layout_width="@dimen/width_btn"
                 android:layout_height="@dimen/heightButton"
-                android:layout_weight="@dimen/weightButtonTeam"
                 android:text="@string/txt_btn_Croatia"
                 android:textAllCaps="false"
                 android:padding="@dimen/padding_teams"
@@ -238,12 +227,11 @@
                 android:textColor="@color/black"
                 android:background="@android:color/transparent"
                 android:layout_margin="@dimen/marginBetweenTeams"
-                tools:ignore="DuplicateIds" />
+                 />
             <Button
                 android:id="@+id/btn_Denmark"
-                android:layout_width="wrap_content"
+                android:layout_width="@dimen/width_btn"
                 android:layout_height="@dimen/heightButton"
-                android:layout_weight="@dimen/weightButtonTeam"
                 android:text="@string/txt_btn_Denmark"
                 android:textAllCaps="false"
                 android:padding="@dimen/padding_teams"
@@ -266,9 +254,8 @@
             >
             <Button
                 android:id="@+id/btn_Ecuador"
-                android:layout_width="wrap_content"
+                android:layout_width="@dimen/width_btn"
                 android:layout_height="@dimen/heightButton"
-                android:layout_weight="@dimen/weightButtonTeam"
                 android:text="@string/txt_btn_Ecuador"
                 android:textAllCaps="false"
                 android:padding="@dimen/padding_teams"
@@ -281,9 +268,8 @@
                 />
             <Button
                 android:id="@+id/btn_Spain"
-                android:layout_width="wrap_content"
+                android:layout_width="@dimen/width_btn"
                 android:layout_height="@dimen/heightButton"
-                android:layout_weight="@dimen/weightButtonTeam"
                 android:text="@string/txt_btn_Spain"
                 android:textAllCaps="false"
                 android:padding="@dimen/padding_teams"
@@ -293,22 +279,21 @@
                 android:textColor="@color/black"
                 android:background="@android:color/transparent"
                 android:layout_margin="@dimen/marginBetweenTeams"
-                tools:ignore="DuplicateIds" />
+                 />
+
             <Button
                 android:id="@+id/btn_UnitedStates"
-                android:layout_width="wrap_content"
+                android:layout_width="@dimen/width_btn"
                 android:layout_height="@dimen/heightButton"
-                android:layout_weight="@dimen/weightButtonTeam"
-                android:text="@string/txt_btn_UnitedStates"
-                android:textAllCaps="false"
+                android:layout_margin="@dimen/marginBetweenTeams"
+                android:background="@android:color/transparent"
                 android:padding="@dimen/padding_teams"
                 android:paddingBottom="@dimen/padding_button_teams"
-                android:textSize="@dimen/size_teams"
+                android:text="@string/txt_btn_UnitedStates"
                 android:textAlignment="textStart"
+                android:textAllCaps="false"
                 android:textColor="@color/black"
-                android:background="@android:color/transparent"
-                android:layout_margin="@dimen/marginBetweenTeams"
-                />
+                android:textSize="@dimen/size_teams" />
         </LinearLayout>
 
         <LinearLayout
@@ -321,9 +306,8 @@
             >
             <Button
                 android:id="@+id/btn_France"
-                android:layout_width="wrap_content"
+                android:layout_width="@dimen/width_btn"
                 android:layout_height="@dimen/heightButton"
-                android:layout_weight="@dimen/weightButtonTeam"
                 android:text="@string/txt_btn_France"
                 android:textAllCaps="false"
                 android:padding="@dimen/padding_teams"
@@ -336,9 +320,8 @@
                 />
             <Button
                 android:id="@+id/btn_Gales"
-                android:layout_width="wrap_content"
+                android:layout_width="@dimen/width_btn"
                 android:layout_height="@dimen/heightButton"
-                android:layout_weight="@dimen/weightButtonTeam"
                 android:text="@string/txt_btn_Gales"
                 android:textAllCaps="false"
                 android:padding="@dimen/padding_teams"
@@ -351,9 +334,8 @@
                 tools:ignore="DuplicateIds" />
             <Button
                 android:id="@+id/btn_Ghana"
-                android:layout_width="wrap_content"
+                android:layout_width="@dimen/width_btn"
                 android:layout_height="@dimen/heightButton"
-                android:layout_weight="@dimen/weightButtonTeam"
                 android:text="@string/txt_btn_Ghana"
                 android:textAllCaps="false"
                 android:padding="@dimen/padding_teams"
@@ -376,9 +358,8 @@
             >
             <Button
                 android:id="@+id/btn_Nederland"
-                android:layout_width="wrap_content"
+                android:layout_width="@dimen/width_btn"
                 android:layout_height="@dimen/heightButton"
-                android:layout_weight="@dimen/weightButtonTeam"
                 android:text="@string/txt_btn_Nederland"
                 android:textAllCaps="false"
                 android:padding="@dimen/padding_teams"
@@ -391,9 +372,8 @@
                 />
             <Button
                 android:id="@+id/btn_England"
-                android:layout_width="wrap_content"
+                android:layout_width="@dimen/width_btn"
                 android:layout_height="@dimen/heightButton"
-                android:layout_weight="@dimen/weightButtonTeam"
                 android:text="@string/txt_btn_England"
                 android:textAllCaps="false"
                 android:padding="@dimen/padding_teams"
@@ -403,14 +383,13 @@
                 android:textColor="@color/black"
                 android:background="@android:color/transparent"
                 android:layout_margin="@dimen/marginBetweenTeams"
-                tools:ignore="DuplicateIds" />
+                 />
 
             <Button
                 android:id="@+id/btn_Iran"
-                android:layout_width="wrap_content"
+                android:layout_width="@dimen/width_btn"
                 android:layout_height="@dimen/heightButton"
                 android:layout_margin="@dimen/marginBetweenTeams"
-                android:layout_weight="@dimen/weightButtonTeam"
                 android:background="@android:color/transparent"
                 android:padding="@dimen/padding_teams"
                 android:paddingBottom="@dimen/padding_button_teams"
@@ -419,7 +398,7 @@
                 android:textAlignment="textStart"
                 android:textAllCaps="false"
                 android:textColor="@color/black"
-                tools:ignore="TouchTargetSizeCheck" />
+                />
         </LinearLayout>
 
         <LinearLayout
@@ -432,9 +411,8 @@
             >
             <Button
                 android:id="@+id/btn_Japan"
-                android:layout_width="wrap_content"
+                android:layout_width="@dimen/width_btn"
                 android:layout_height="@dimen/heightButton"
-                android:layout_weight="@dimen/weightButtonTeam"
                 android:text="@string/txt_btn_Japan"
                 android:textAllCaps="false"
                 android:padding="@dimen/padding_teams"
@@ -447,9 +425,8 @@
                 />
             <Button
                 android:id="@+id/btn_Morocco"
-                android:layout_width="wrap_content"
+                android:layout_width="@dimen/width_btn"
                 android:layout_height="@dimen/heightButton"
-                android:layout_weight="@dimen/weightButtonTeam"
                 android:text="@string/txt_btn_Maroc"
                 android:textAllCaps="false"
                 android:padding="@dimen/padding_teams"
@@ -462,9 +439,8 @@
                 tools:ignore="DuplicateIds" />
             <Button
                 android:id="@+id/btn_Mexico"
-                android:layout_width="wrap_content"
+                android:layout_width="@dimen/width_btn"
                 android:layout_height="@dimen/heightButton"
-                android:layout_weight="@dimen/weightButtonTeam"
                 android:text="@string/txt_btn_Mexico"
                 android:textAllCaps="false"
                 android:padding="@dimen/padding_teams"
@@ -487,9 +463,8 @@
             >
             <Button
                 android:id="@+id/btn_Poland"
-                android:layout_width="wrap_content"
+                android:layout_width="@dimen/width_btn"
                 android:layout_height="@dimen/heightButton"
-                android:layout_weight="@dimen/weightButtonTeam"
                 android:text="@string/txt_btn_Poland"
                 android:textAllCaps="false"
                 android:padding="@dimen/padding_teams"
@@ -502,9 +477,8 @@
                 />
             <Button
                 android:id="@+id/btn_Portugal"
-                android:layout_width="wrap_content"
+                android:layout_width="@dimen/width_btn"
                 android:layout_height="@dimen/heightButton"
-                android:layout_weight="@dimen/weightButtonTeam"
                 android:text="@string/txt_btn_Portugal"
                 android:textAllCaps="false"
                 android:padding="@dimen/padding_teams"
@@ -517,9 +491,8 @@
                 tools:ignore="DuplicateIds" />
             <Button
                 android:id="@+id/btn_Qatar"
-                android:layout_width="wrap_content"
+                android:layout_width="@dimen/width_btn"
                 android:layout_height="@dimen/heightButton"
-                android:layout_weight="@dimen/weightButtonTeam"
                 android:text="@string/txt_btn_Qatar"
                 android:textAllCaps="false"
                 android:padding="@dimen/padding_teams"
@@ -542,9 +515,8 @@
             >
             <Button
                 android:id="@+id/btn_Senegal"
-                android:layout_width="wrap_content"
+                android:layout_width="@dimen/width_btn"
                 android:layout_height="@dimen/heightButton"
-                android:layout_weight="@dimen/weightButtonTeam"
                 android:text="@string/txt_btn_Senegale"
                 android:textAllCaps="false"
                 android:padding="@dimen/padding_teams"
@@ -557,9 +529,8 @@
                 />
             <Button
                 android:id="@+id/btn_Serbia"
-                android:layout_width="wrap_content"
+                android:layout_width="@dimen/width_btn"
                 android:layout_height="@dimen/heightButton"
-                android:layout_weight="@dimen/weightButtonTeam"
                 android:text="@string/txt_btn_Serbia"
                 android:textAllCaps="false"
                 android:padding="@dimen/padding_teams"
@@ -572,9 +543,8 @@
                 tools:ignore="DuplicateIds" />
             <Button
                 android:id="@+id/btn_Switzerland"
-                android:layout_width="wrap_content"
+                android:layout_width="@dimen/width_btn"
                 android:layout_height="@dimen/heightButton"
-                android:layout_weight="@dimen/weightButtonTeam"
                 android:text="@string/txt_btn_Switzerland"
                 android:textAllCaps="false"
                 android:padding="@dimen/padding_teams"
@@ -597,9 +567,8 @@
             >
             <Button
                 android:id="@+id/btn_Tunisia"
-                android:layout_width="wrap_content"
+                android:layout_width="@dimen/width_btn"
                 android:layout_height="@dimen/heightButton"
-                android:layout_weight="@dimen/weightButtonTeam"
                 android:text="@string/txt_btn_Tunisia"
                 android:textAllCaps="false"
                 android:padding="0dp"
@@ -612,9 +581,8 @@
                 />
             <Button
                 android:id="@+id/btn_Uruguay"
-                android:layout_width="wrap_content"
+                android:layout_width="@dimen/width_btn"
                 android:layout_height="@dimen/heightButton"
-                android:layout_weight="@dimen/weightButtonTeam"
                 android:text="@string/txt_btn_Uruguay"
                 android:textAllCaps="false"
                 android:padding="0dp"
@@ -626,9 +594,8 @@
                 android:layout_margin="@dimen/marginBetweenTeams"
                 tools:ignore="DuplicateIds" />
             <Button
-                android:layout_width="wrap_content"
+                android:layout_width="@dimen/width_btn"
                 android:layout_height="@dimen/heightButton"
-                android:layout_weight="@dimen/weightButtonTeam"
                 android:textAllCaps="false"
                 android:padding="0dp"
                 android:paddingBottom="0dp"

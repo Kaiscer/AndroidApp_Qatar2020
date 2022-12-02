@@ -20,25 +20,24 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:weightSum="1"
-        android:layout_alignParentBottom="true"
-
+        android:layout_centerInParent="true"
         >
+
         <Button
             android:id="@+id/btn_RegisterPoints"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="0.5"
-            android:text="@string/txt_btn_Register"
-            android:layout_centerInParent="true"
-            android:backgroundTint="@color/colors_btn"/>
+            android:backgroundTint="@color/colors_btn"
+            android:text="@string/txt_btn_Register" />
 
         <Button
             android:id="@+id/btn_ConsultResult"
-            android:layout_width="match_parent"
+            android:layout_width="389dp"
             android:layout_height="wrap_content"
             android:layout_weight="0.5"
-            android:text="@string/txt_btn_ConsultResul"
-            android:backgroundTint="@color/colors_btn"/>
+            android:backgroundTint="@color/colors_btn"
+            android:text="@string/txt_btn_ConsultResul" />
     </LinearLayout>
 
 

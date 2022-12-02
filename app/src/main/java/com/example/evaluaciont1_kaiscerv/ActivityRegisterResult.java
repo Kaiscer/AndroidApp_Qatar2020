@@ -68,9 +68,7 @@ public class ActivityRegisterResult extends AppCompatActivity implements View.On
 
     @Override
     public void onClick(View view) {
-        if (view == btnSelectTeam1){
-            selectTeams();
-        }else if (view == btnSelectTeam2){
+        if (view == btnSelectTeam1 || view == btnSelectTeam2){
             selectTeams();
         }else if(view == btnSaveData){
             saveData();
@@ -106,8 +104,12 @@ public class ActivityRegisterResult extends AppCompatActivity implements View.On
     }
 
     private void selectTeams() {
-        Intent intent = new Intent(this, SelectTeamsActivity.class);
-        startActivityForResult.launch(intent);
-
+        if (btnSelectTeam1.isPressed()){
+            Intent intent = new Intent(this, SelectTeamsActivity.class);
+            startActivityForResult.launch(intent);
+    }else if (btnSelectTeam2.isPressed()){
+            Intent intent = new Intent(this, SelectTeamsActivity.class);
+            startActivityForResult.launch(intent);
+        }
     }
 }
