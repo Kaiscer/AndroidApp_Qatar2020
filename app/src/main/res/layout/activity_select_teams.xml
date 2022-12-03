@@ -615,9 +615,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_above="@+id/ll_BtnAcceptCancel"
-        android:hint="@string/hint_edit_CountrySelected"
         android:enabled="false"
-        />
+        android:hint="@string/hint_edit_CountrySelected"
+        android:minHeight="48dp" />
 
     <LinearLayout
         android:id="@+id/ll_BtnAcceptCancel"

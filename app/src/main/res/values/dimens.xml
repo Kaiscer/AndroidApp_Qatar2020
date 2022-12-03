@@ -17,7 +17,7 @@
     <dimen name="weightTextLine">15</dimen>
     <dimen name="weightButtonTeam">1</dimen>
     <dimen name="marginBetweenTeams">3dp</dimen>
-    <dimen name="marginBetweenLiners">5dp</dimen>
+    <dimen name="marginBetweenLiners">10dp</dimen>
     <dimen name="heightButton">35dp</dimen>
     <dimen name="marginBtnAcceptCancel">10dp</dimen>
     <dimen name="weightBtnAcceptCancel">40</dimen>
@@ -32,5 +32,6 @@
     <dimen name="margin_start_ll">0dp</dimen>
     <dimen name="margin_top_ll">100dp</dimen>
     <dimen name="width_btn">115dp</dimen>
+    <dimen name="sp_min_height">40dp</dimen>
 
 </resources>

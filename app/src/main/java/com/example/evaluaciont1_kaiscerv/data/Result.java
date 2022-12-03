@@ -26,6 +26,22 @@ public class Result {
         return team2;
     }
 
+    public String getPhase() {
+        return phase;
+    }
+
+    public String getDateTime() {
+        return dateTime;
+    }
+
+    public int getScoreTeam1() {
+        return scoreTeam1;
+    }
+
+    public int getScoreTeam2() {
+        return scoreTeam2;
+    }
+
     @Override
     public String toString() {
         return "Result{" +

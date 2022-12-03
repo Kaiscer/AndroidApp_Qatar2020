@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     private void registerResult() {
-        Intent intent = new Intent(this, ActivityRegisterResult.class);
+        Intent intent = new Intent(this, RegisterResultActivity.class);
         startActivity(intent);
     }
 }

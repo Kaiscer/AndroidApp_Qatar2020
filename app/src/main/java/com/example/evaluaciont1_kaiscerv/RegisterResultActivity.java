@@ -6,29 +6,38 @@ import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.DatePickerDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.DatePicker;
 import android.widget.EditText;
+import android.widget.Spinner;
 import android.widget.Toast;
 
 import com.example.evaluaciont1_kaiscerv.data.ListResult;
 import com.example.evaluaciont1_kaiscerv.data.Result;
 
-public class ActivityRegisterResult extends AppCompatActivity implements View.OnClickListener {
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Locale;
+
+public class RegisterResultActivity extends AppCompatActivity implements View.OnClickListener {
 
 
     EditText etDateTime;
-    EditText etPhase;
-    static EditText etSteam1;
+    final Calendar calendar = Calendar.getInstance();
+    Spinner spPhase;
+    EditText etSteam1;
     EditText etSteam2;
     EditText etGolTeam1;
     EditText etGolTeam2;
     Button btnSelectTeam1,btnSelectTeam2, btnSaveData, btnClearData;
     ListResult listResult;
 
-    public ActivityRegisterResult() {
+
+    public RegisterResultActivity() {
         listResult = new ListResult();
     }
 
@@ -51,11 +60,27 @@ public class ActivityRegisterResult extends AppCompatActivity implements View.On
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register_result);
         references();
-    }
 
+        DatePickerDialog.OnDateSetListener date = new DatePickerDialog.OnDateSetListener() {
+            @Override
+            public void onDateSet(DatePicker view, int year, int month, int day) {
+                calendar.set(Calendar.YEAR, year);
+                calendar.set(Calendar.MONTH, month);
+                calendar.set(Calendar.DAY_OF_MONTH, day);
+                upgradeDateTime();
+            }
+        };
+        etDateTime.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                new DatePickerDialog(RegisterResultActivity.this, date, calendar.get(Calendar.YEAR),
+                        calendar.get(Calendar.MONTH), calendar.get(Calendar.DAY_OF_MONTH)).show();
+            }
+        });
+    }
     private void references() {
         etDateTime = findViewById(R.id.edit_DateTime);
-        etPhase = findViewById(R.id.edit_Phase);
+        spPhase = findViewById(R.id.sp_Phase);
         etSteam1 = findViewById(R.id.edit_SelectTeam1);
         etSteam2 = findViewById(R.id.edit_SelectTeam2);
         etGolTeam1 = findViewById(R.id.edit_GolTeam1);
@@ -68,11 +93,14 @@ public class ActivityRegisterResult extends AppCompatActivity implements View.On
         btnSaveData.setOnClickListener(this);
         btnClearData = findViewById(R.id.btn_ClearData);
         btnClearData.setOnClickListener(this);
-
-
-
-
     }
+    private void upgradeDateTime() {
+        String format = "dd/MM/yy";
+        SimpleDateFormat FormatDate = new SimpleDateFormat(format, Locale.forLanguageTag("es"));
+        etDateTime.setText(FormatDate.format(calendar.getTime()));
+    }
+
+
 
     @Override
     public void onClick(View view) {
@@ -87,7 +115,7 @@ public class ActivityRegisterResult extends AppCompatActivity implements View.On
 
     private void saveData() {
         String dataTime = etDateTime.getText().toString();
-        String phase = etPhase.getText().toString();
+        String phase = spPhase.getSelectedItem().toString();
         String team1 = etSteam1.getText().toString();
         String team2 = etSteam2.getText().toString();
         String golTeam1 = etGolTeam1.getText().toString();
@@ -100,16 +128,17 @@ public class ActivityRegisterResult extends AppCompatActivity implements View.On
             Toast.makeText(this, R.string.save_messege, Toast.LENGTH_LONG).show();
             listResult.addResult(new Result(phase, dataTime, team1, Integer.parseInt(String.valueOf(golTeam1)),
                     team2, Integer.parseInt(String.valueOf(golTeam2))));
-            for (Result result : listResult.getListResult()) {
+
+            /*for (Result result : listResult.getListResult()) {
                 System.out.println(result.toString());
-            }
+            }*/
             clearData();
         }
     }
 
     private void clearData() {
         etDateTime.setText("");
-        etPhase.setText("");
+        spPhase.setSelection(0);
         etSteam1.setText("");
         etSteam2.setText("");
         etGolTeam1.setText("");

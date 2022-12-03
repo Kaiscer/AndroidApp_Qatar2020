@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="@dimen/marginApp"
-    tools:context=".ActivityRegisterResult">
+    tools:context=".RegisterResultActivity">
 
     <TextView
         android:id="@+id/tv_Title"

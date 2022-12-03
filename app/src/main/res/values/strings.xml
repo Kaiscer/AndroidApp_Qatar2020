@@ -3,7 +3,7 @@
     <string name="txt_btn_Register">Registrar puntos</string>
     <string name="txt_btn_ConsultResul">Consultar Resultado</string>
     <string name="tvEnter">Introducir resultado</string>
-    <string name="hint_edit_DataTime">Introduce la fecha dd/mm/yyyy  hh:mi</string>
+    <string name="hint_edit_DataTime">Introduce la fecha</string>
     <string name="hint_edit_Phase">Introduce la fase: Fase de grupo, Octavos, Cuartos, Semifinales, Tercer lugar, Final</string>
     <string name="hint_edit_Team1">Selecciona el equipo 1</string>
     <string name="hint_edit_Team2">Selecciona el equipo 2</string>
@@ -57,4 +57,10 @@
     <string name="save_messege">!Resultado guardado!</string>
     <string name="tvConsultResult">Consultar resultados por pais</string>
     <string name="txt_btn_Consult">Seleccionar</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="txt_tvG">-</string>
+    <string name="txt">Selecciona el pais</string>
+    <string name="backName">Seleccionar</string>
+    <string name="txtChangeName">Limpiar Datos</string>
 </resources>

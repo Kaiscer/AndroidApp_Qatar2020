@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="phase">
+        <item>Fase de grupo</item>
+        <item>Octavos de final</item>
+        <item>Cuartos de final</item>
+        <item>Semifinales</item>
+        <item>Terce lugar</item>
+        <item>Final</item>
+    </array>
+</resources>

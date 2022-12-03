@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="@dimen/marginApp"
-    tools:context=".ActivityRegisterResult">
+    tools:context=".RegisterResultActivity">
 
     <TextView
         android:id="@+id/tv_Title"
@@ -22,25 +22,31 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
+        android:layout_marginTop="@dimen/margin_between_tv_and_et"
         android:weightSum="1"
         >
     <EditText
         android:id="@+id/edit_DateTime"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
         android:layout_weight="0.5"
         android:layout_marginTop="@dimen/margin_between_edittext"
         android:hint="@string/hint_edit_DataTime"
-        android:inputType="datetime"
+        android:inputType="textPersonName"
         />
-    <EditText
-        android:id="@+id/edit_Phase"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="0.5"
-        android:layout_marginTop="@dimen/margin_between_edittext"
-        android:hint="@string/hint_edit_Phase"
-        android:inputType="textMultiLine"
+    <Spinner
+        android:id="@+id/sp_Phase"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/margin_between_tv_and_et"
+        android:minHeight="@dimen/sp_min_height"
+        android:entries="@array/phase"
+        android:backgroundTint="@color/colorApp"
+
         />
 
     </LinearLayout>
@@ -122,10 +128,11 @@
                 android:id="@+id/edit_GolTeam1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
                 android:layout_weight="0.80"
                 android:hint="@string/hint_GolTeam1"
                 android:textSize="@dimen/edit_size_hint"
-                android:inputType="number"
+                android:inputType="numberSigned"
                 />
 
             <TextView
@@ -141,10 +148,11 @@
                 android:id="@+id/edit_GolTeam2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
                 android:layout_weight="0.80"
                 android:hint="@string/hint_GolTeam2"
                 android:textSize="@dimen/edit_size_hint"
-                android:inputType="number"
+                android:inputType="numberSigned"
                 />
 
         </LinearLayout>

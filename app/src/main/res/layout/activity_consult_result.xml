@@ -25,16 +25,17 @@
         >
 
         <EditText
-            android:id="@+id/edit_SelectTeam1"
+            android:id="@+id/edit_SelectTeam3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="3"
             android:enabled="false"
             android:hint="@string/hint_edit_Team1"
+            android:minHeight="48dp"
             android:textSize="@dimen/edit_size_hint" />
 
         <Button
-            android:id="@+id/btn_SelectTeam1"
+            android:id="@+id/btn_SelectTeam3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
